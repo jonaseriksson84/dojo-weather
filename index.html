@@ -1,0 +1,46 @@
+<html >
+<head>
+
+    <script>dojoConfig = {parseOnLoad: true}</script>
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.8.0/dojo/dojo.js"></script>
+    <script src="app/main.js"></script>
+    <link rel="stylesheet" href="./app/theme/reset.css">
+    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.css">-->
+    <link rel="stylesheet" type="text/css"
+          href="http://ajax.googleapis.com/ajax/libs/dojo/1.8/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="./app/theme/main.css">
+
+
+</head>
+<body class="claro">
+
+        <div id="switch" class="switch">
+            F
+        </div>
+
+        <div>
+            <label for="searchBox">City:
+                <input id="searchBox" data-dojo-type="dijit/form/TextBox" value="Stockholm">
+            </label>
+
+            <label for="countrySelect">Country:
+                <select id="countrySelect" data-dojo-type="dijit/form/Select" wid></select>
+            </label>
+
+            <button class="button tiny expand" id="searchBtn">Search</button>
+        </div>
+
+        <div id="weather">
+            <br />
+            Current weather for <br /><strong><span id="city"></span></strong>
+            <div>Temperature: <span id="temperature"></span></div>
+            <div id="icon"></div>
+            <div id="desc"></div>
+        </div>
+
+        <div id="error" class="hide">
+            No results found for this combination.
+        </div>
+
+    </body>
+</html>
